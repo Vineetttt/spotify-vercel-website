@@ -76,7 +76,7 @@ const playMusic = (track, pause = false) => {
 async function displayAlbums() {
     console.log("displaying albums")
     // let a = await fetch(`/music/`)
-    let a = await fetch(`https://incomparable-elf-f1032f.netlify.app/music/`)
+    let a = await fetch(`music`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
