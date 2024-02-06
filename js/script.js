@@ -20,7 +20,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
     currFolder = folder
-    let a = await fetch(`${folder}`)
+    let a = await fetch(`${folder}`, { mode: 'cors' });
     let response = await a.text()
     // console.log(response);
     let div = document.createElement("div")
