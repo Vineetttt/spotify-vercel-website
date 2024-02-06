@@ -88,7 +88,7 @@ async function displayAlbums() {
     for (let index = 3; index < array.length-1; index++) {
         const e = array[index]; 
         // console.log(e.href);
-        if (e.href.includes("/music") && !e.href.includes(".htaccess")) {
+        if (e.href.includes("music") && !e.href.includes(".htaccess")) {
             let folder = e.href.split("/").slice(-1)[0]
             // console.log(folder);
             // console.log(folder);
