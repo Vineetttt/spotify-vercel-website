@@ -76,7 +76,7 @@ const playMusic = (track, pause = false) => {
 async function displayAlbums() {
     console.log("displaying albums")
     // let a = await fetch(`/music/`)
-    let a = await fetch(`https://github.com/SachinNawale2063/spotify-vercel-website/tree/main/music`)
+    let a = await fetch(`https://incomparable-elf-f1032f.netlify.app/music/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -126,7 +126,7 @@ async function displayAlbums() {
 async function main() {
 
     //get the list of all the songs
-    await getSongs("music/ncs")
+    await getSongs("https://incomparable-elf-f1032f.netlify.app/music/ncs")
     playMusic(songs[0], true)
 
     //Display all the albums on the page
