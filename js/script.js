@@ -93,7 +93,7 @@ async function displayAlbums() {
             // console.log(folder);
             // console.log(folder);
             // Get the metadata of the folder
-            let a = await fetch(`/music/${folder}/info.json`)
+            let a = await fetch(`music/${folder}/info.json`)
             let response = await a.json(); 
             cardContainer.innerHTML = cardContainer.innerHTML + ` <div data-folder="${folder}" class="card">
             <div class="play">
