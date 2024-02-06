@@ -126,7 +126,7 @@ async function displayAlbums() {
 async function main() {
 
     //get the list of all the songs
-    await getSongs("https://incomparable-elf-f1032f.netlify.app/music/ncs")
+    await getSongs("music")
     playMusic(songs[0], true)
 
     //Display all the albums on the page
