@@ -76,7 +76,7 @@ const playMusic = (track, pause = false) => {
 async function displayAlbums() {
     console.log("displaying albums")
     // let a = await fetch(`/music/`)
-    let a = await fetch(`music`)
+    let a = await fetch(`https://github.com/SachinNawale2063/spotify-vercel-website/tree/main/music`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
